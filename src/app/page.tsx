@@ -377,7 +377,7 @@ export default function Home() {
                 <AccordionContent className="text-gray-600 pt-4">
                   Under the guidance of founder Gopal Saraf, SM Plastics has grown from humble 
                   beginnings to become a trusted name in injection moulding. His commitment to 
-                  innovation, quality, and customer satisfaction continues to drive our company's 
+                  innovation, quality, and customer satisfaction continues to drive our company&apos;s 
                   growth and reputation in the industry.
                 </AccordionContent>
               </AccordionItem>
