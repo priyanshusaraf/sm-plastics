@@ -1,13 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { 
   Factory, 
@@ -16,7 +12,6 @@ import {
   Calendar, 
   Mail, 
   Phone, 
-  MapPin, 
   Cog, 
   Package, 
   Star,
@@ -28,20 +23,6 @@ import {
   Menu,
   X
 } from 'lucide-react';
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 }
-};
-
-const staggerContainer = {
-  initial: {},
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);

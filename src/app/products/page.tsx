@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Package, Star, Box, ToyBrick, Factory, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const categories = [
   {
@@ -70,12 +71,12 @@ export default function ProductsPage() {
               <span className="text-2xl font-bold text-gray-900 block">SM Plastics</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
-              <a href="/#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
-              <a href="/products" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Products</a>
-              <a href="/#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
-              <a href="/#experience" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Experience</a>
-              <a href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+              <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</Link>
+              <Link href="/#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</Link>
+              <Link href="/products" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Products</Link>
+              <Link href="/#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</Link>
+              <Link href="/#experience" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Experience</Link>
+              <Link href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</Link>
             </div>
             {/* Hamburger for mobile */}
             <div className="md:hidden flex items-center">
@@ -87,12 +88,12 @@ export default function ProductsPage() {
           {/* Mobile menu */}
           {menuOpen && (
             <div className="md:hidden bg-white border-t border-gray-200 shadow-lg rounded-b-lg px-6 py-4 space-y-2">
-              <a href="/" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Home</a>
-              <a href="/#about" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>About</a>
-              <a href="/products" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Products</a>
-              <a href="/#services" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Services</a>
-              <a href="/#experience" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Experience</a>
-              <a href="/#contact" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Contact</a>
+              <Link href="/" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Home</Link>
+              <Link href="/#about" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>About</Link>
+              <Link href="/products" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Products</Link>
+              <Link href="/#services" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Services</Link>
+              <Link href="/#experience" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Experience</Link>
+              <Link href="/#contact" className="block text-gray-700 font-medium py-2" onClick={() => setMenuOpen(false)}>Contact</Link>
             </div>
           )}
         </div>
